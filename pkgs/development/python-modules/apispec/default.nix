@@ -32,9 +32,6 @@ buildPythonPackage rec {
     marshmallow = [
       marshmallow
     ];
-    yaml = [
-      pyyaml
-    ];
     validation = [
       openapi-spec-validator
       prance
