@@ -25,6 +25,7 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [
     packaging
+    pyyaml
   ];
 
   passthru.optional-dependencies = {
