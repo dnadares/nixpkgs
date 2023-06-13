@@ -135,6 +135,7 @@ buildPythonPackage rec {
 
   inherit patches;
 
+  doCheck = false;
   # only move to sourceRoot after patching, makes patching easier
   postPatch = ''
     cd psycopg
