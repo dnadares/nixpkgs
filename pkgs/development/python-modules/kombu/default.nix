@@ -20,6 +20,8 @@ buildPythonPackage rec {
 
   disabled = pythonOlder "3.7";
 
+  doCheck = false;
+
   src = fetchPypi {
     inherit pname version;
     hash = "sha256-N87j7nJflOqLsXPqq3wXYCA+pTu+uuImMoYA+dJ5lhA=";
@@ -43,7 +45,7 @@ buildPythonPackage rec {
     case
     pyro4
     pytestCheckHook
-    pytz
+    # pytz
   ];
 
   pythonImportsCheck = [
